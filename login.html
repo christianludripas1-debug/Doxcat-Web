@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body{
+background:#111;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+}
+.box{
+background:#222;
+padding:30px;
+border-radius:10px;
+width:300px;
+}
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+button{
+width:100%;
+padding:10px;
+font-weight:bold;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>LOGIN</h2>
+
+ID:<br>
+<input id="id">
+
+PASSWORD:<br>
+<input id="pass" type="password">
+
+<button onclick="login()">LOGIN</button>
+
+</div>
+
+<script>
+function login(){
+
+let id=document.getElementById("id").value;
+let pass=document.getElementById("pass").value;
+
+if(id=="20117" && pass=="BIGBOSS"){
+window.location="dashboard.html";
+}else{
+alert("Wrong ID or Password");
+}
+
+}
+</script>
+
+</body>
+</html>
